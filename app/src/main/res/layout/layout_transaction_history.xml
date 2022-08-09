@@ -1,0 +1,107 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5ssp"
+    android:background="@drawable/round_view_bg">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_65sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        app:layout_constraintTop_toTopOf="@id/item_layout"
+        app:layout_constraintStart_toStartOf="@id/item_layout"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_view_bg"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:paddingTop="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_15sdp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/border"
+            android:layout_width="39dp"
+            android:layout_height="35dp"
+            android:background="@drawable/round_view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="@id/border"
+            app:layout_constraintEnd_toEndOf="@id/border"
+            app:layout_constraintStart_toStartOf="@id/border"
+            app:layout_constraintTop_toTopOf="@id/border"
+            app:srcCompat="@drawable/ic_baseline_call_made_24" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:lines="1"
+            android:textStyle="bold"
+            android:text="Transfer Charge"
+            android:textColor="@color/black"
+            android:textSize="@dimen/twelve"
+            app:layout_constraintBottom_toTopOf="@id/date"
+            app:layout_constraintEnd_toStartOf="@id/amount"
+            app:layout_constraintStart_toEndOf="@id/border"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:text="26, Mar 2022, 12:03:09 PM"
+            android:textColor="#66000000"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/amount"
+            app:layout_constraintStart_toEndOf="@id/border"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="-N15,000"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/twelve"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="Successful"
+            android:textColor="@color/successColor"
+            android:textSize="@dimen/twelve"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="radius_corner">8dp</dimen>
+    <dimen name="elevation">2dp</dimen>
+
+    //adding 1dp
+    <dimen name="ten">11sp</dimen>
+    <dimen name="eleven">12sp</dimen>
+    <dimen name="twelve">13sp</dimen>
+    <dimen name="thirteen">14sp</dimen>
+    <dimen name="fourteen">15sp</dimen>
+    <dimen name="fifteen">16sp</dimen>
+    <dimen name="sixteen">17sp</dimen>
+    <dimen name="seventeen">18sp</dimen>
+    <dimen name="eighteen">19sp</dimen>
+    <dimen name="nineteen">20sp</dimen>
+    <dimen name="twenty">21sp</dimen>
+    <dimen name="twenty_one">22sp</dimen>
+    <dimen name="twenty_two">23sp</dimen>
+    <dimen name="twenty_three">24sp</dimen>
+    <dimen name="twenty_four">25sp</dimen>
+    <dimen name="twenty_five">26sp</dimen>
+
+</resources>
